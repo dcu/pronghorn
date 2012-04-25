@@ -53,9 +53,7 @@ module Pronghorn
       if @headers.key?("Content-Type")
         @env["CONTENT_TYPE"] = @headers.delete("Content-Type")
       end
-      headers = {}
-      @headers.each{|k, v| headers["HTTP_#{k.upcase.gsub('-','_')}"] = v}
-      @env.merge!(headers)
+      @headers.each{|k, v| @env["HTTP_#{k.upcase.gsub('-','_')}"] = v}
       @env.merge!(env_vars)
     end
   end
