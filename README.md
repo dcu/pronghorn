@@ -6,7 +6,7 @@ _Minimal HTTP server for Rack applications_
 
 Pronghorn is a minimal and fast HTTP server for Rack applications.
 
-It's powered by [EventMachine](https://github.com/eventmachine/eventmachine), Ryan Dahl's [http-parser](https://github.com/joyent/http-parser) and [Rack](https://github.com/rack/rack).
+It's powered by [EventMachine](https://github.com/eventmachine/eventmachine), Ryan Dahl's [http-parser](https://github.com/joyent/http-parser) and [Rack](https://github.com/rack/rack). It's highly inspired in [Thin](https://github.com/macournoyer/thin)
 
 ## Installation
 
